@@ -12,6 +12,6 @@ create table customer(customerid varchar(20) primary key,customername varchar(20
 
 create table loan(customerid varchar(20),loanid varchar(20) primary key,loanamount varchar(20));
 
-create table payment(loanid varchar(20),paymentid varchar(20) primary key,paymentdate varchar(20),paymentamount varchar(20));
+create table payment(loanid varchar(20),paymentid varchar(20) primary key,paymentdate varchar(50),paymentamount varchar(20));
 
-create table transaction(customerid varchar(20),accountid varchar(20),date varchar(20),type varchar(20),destinationid varchar(20),amount varchar(20));
+create table transaction(customerid varchar(20),accountid varchar(20),date varchar(50),type varchar(20),destinationid varchar(20),amount varchar(20));
